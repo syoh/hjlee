@@ -1,0 +1,21 @@
+// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
+// script from https://www.josephguadagno.net/2022/12/10/getting-started-with-developer-containers
+{
+	"name": "Jekyll",
+	"image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+	"forwardPorts": [
+		4000,
+		35729
+	],
+	"postCreateCommand": "sh .devcontainer/post-create.sh",
+	"customizations": {
+		"vscode": {
+		  "extensions": [
+			"yzhang.markdown-all-in-one",
+			"DavidAnson.vscode-markdownlint",
+			"bierner.markdown-emoji",
+			"streetsidesoftware.code-spell-checker"
+		  ]
+		}
+	  }
+}
